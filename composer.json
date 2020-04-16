@@ -1,0 +1,38 @@
+{
+    "name": "armincms/alhazen",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "armincms",
+        "alhazen",
+        "movie",
+        "series"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "whitecube/nova-flexible-content": "^0.1",
+        "armincms/armincms": "~0.1",
+        "armincms/location": "*",
+        "armincms/taggable": "~0.1",
+        "armincms/raw-data": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Armincms\\Alhazen\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Armincms\\Alhazen\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
