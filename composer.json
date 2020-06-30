@@ -14,7 +14,7 @@
         "php": ">=7.1.0",
         "whitecube/nova-flexible-content": "^0.1",
         "armincms/armincms": "~0.1",
-        "armincms/location": "*",
+        "armincms/location": "~0.1",
         "armincms/taggable": "~0.1",
         "armincms/raw-data": "~0.1"
     },
