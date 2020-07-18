@@ -20,9 +20,9 @@ class CreateAlhazenMediasTable extends Migration
             $table->string('story', 500)->nullable();
             $table->abstract();    
 
-            $table->json("names")->default("[]");
-            $table->json("links")->default("[]");
-            $table->json("detail")->default("[]");  
+            $table->json("names")->nullable();
+            $table->json("links")->nullable();
+            $table->json("detail")->nullable();  
 
             $table->unsignedBigInteger('media_id')->nullable();
             $table->unsignedBigInteger('company_id')->nullable();
