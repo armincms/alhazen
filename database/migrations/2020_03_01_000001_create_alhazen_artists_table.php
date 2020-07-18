@@ -21,8 +21,8 @@ class CreateAlhazenArtistsTable extends Migration
             $table->string('biography', 500)->nullable();   
             $table->enum("gender", Common::genders()->keys()->all())->default('male');
             $table->json('profile')->nullable();
-            $table->unsignedBigInteger('residence_id')->nullalbe();
-            $table->unsignedBigInteger('birthplace_id')->nullalbe(); 
+            $table->unsignedBigInteger('residence_id')->nullable();
+            $table->unsignedBigInteger('birthplace_id')->nullable(); 
             $table->timestamps();
             $table->softDeletes();
 

@@ -27,7 +27,7 @@ class CreateAlhazenMediasTable extends Migration
             $table->unsignedBigInteger('media_id')->nullable();
             $table->unsignedBigInteger('company_id')->nullable();
 
-            $table->timestamp("release_date"); 
+            $table->timestamp("release_date")->nullable(); 
             $table->timestamps();
             $table->softDeletes();
 
