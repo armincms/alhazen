@@ -26,10 +26,10 @@ class Media extends Model implements HasMedia
      * @var array
      */
     protected $casts = [
-    	"link" => "json",
+    	"links" => "json",
     	"names" => "json",
     	"detail" => "json",
-    	"seo" => "json",
+    	"seo" => "json", 
     ];
 
 
